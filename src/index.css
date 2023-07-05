@@ -1,0 +1,394 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Roboto_Black;
+  src: url(fonts\Roboto\Roboto-Black.ttf);
+}
+.roboto_black{
+  font-family: Roboto_Black;
+}
+@font-face {
+  font-family: Roboto_Black_Italic;
+  src: url(fonts\Roboto\Roboto-BlackItalic.ttf);
+}
+.roboto_black_italic{
+  font-family: Roboto_Black_Italic;
+}
+@font-face {
+  font-family: Roboto_Bold;
+  src: url(fonts\Roboto\Roboto-Bold.ttf);
+}
+.roboto_bold{
+  font-family: Roboto_Bold;
+}
+@font-face {
+  font-family: Roboto_Bold_Italic;
+  src: url(fonts\Roboto\Roboto-BoldItalic.ttf);
+}
+.roboto_bold_italic{
+  font-family: Roboto_Bold_Italic;
+}
+@font-face {
+  font-family: Roboto_Italic;
+  src: url(fonts\Roboto\Roboto-Italic.ttf);
+}
+.roboto_italic{
+  font-family: Roboto_Italic;
+}
+@font-face {
+  font-family: Roboto_Light;
+  src: url(fonts\Roboto\Roboto-Light.ttf);
+}
+.roboto_light{
+  font-family: Roboto_Light;
+}
+@font-face {
+  font-family: Roboto_Light_Italic;
+  src: url(fonts\Roboto\Roboto-LightItalic.ttf);
+}
+.roboto_light_italic{
+  font-family: Roboto_Light_Italic;
+}
+@font-face {
+  font-family: Roboto_Medium;
+  src: url(fonts\Roboto\Roboto-Medium.ttf);
+}
+.roboto_medium{
+  font-family: Roboto_Medium;
+}
+@font-face {
+  font-family: Roboto_Medium_Italic;
+  src: url(fonts\Roboto\Roboto-MediumItalic.ttf);
+}
+.roboto_medium_italic{
+  font-family: Roboto_Medium_Italic;
+}
+@font-face {
+  font-family: Roboto_Regular;
+  src: url(fonts\Roboto\Roboto-Regular.ttf);
+}
+.roboto_regular{
+  font-family: Roboto_Regular;
+}
+@font-face {
+  font-family: Roboto_Thin;
+  src: url(fonts\Roboto\Roboto-Thin.ttf);
+}
+.roboto_thin{
+  font-family: Roboto_Thin;
+}
+@font-face {
+  font-family: Roboto_Thin_Italic;
+  src: url(fonts\Roboto\Roboto-ThinItalic.ttf);
+}
+.roboto_thin_italic{
+  font-family: Roboto_Thin_Italic;
+}
+@font-face {
+  font-family: Raleway_Black;
+  src: url(fonts\Raleway-Black.ttf);
+}
+.raleway_black{
+  font-family: Raleway_Black;
+}
+@font-face {
+  font-family: Raleway_Black_Italic;
+  src: url(fonts\Raleway-BlackItalic.ttf);
+}
+.raleway_black_italic{
+  font-family: Raleway_Black_Italic;
+}
+@font-face {
+  font-family: Raleway_Extra_Bold;
+  src: url(fonts\Raleway-ExtraBold.ttf);
+}
+.raleway_extra_bold{
+  font-family: Raleway_Extra_Bold;
+}
+@font-face {
+  font-family: Raleway_Extra_Bold_Italic;
+  src: url(fonts\Raleway-ExtraBoldItalic.ttf);
+}
+.raleway_extra_bold_italic{
+  font-family: Raleway_Extra_Bold_Italic;
+}
+@font-face {
+  font-family: Raleway_Extra_Light;
+  src: url(fonts\Raleway-ExtraLight.ttf);
+}
+.raleway_extra_light{
+  font-family: Raleway_Extra_Light;
+}
+@font-face {
+  font-family: Raleway_Extra_Light_Italic;
+  src: url(fonts\Raleway-ExtraLightItalic.ttf);
+}
+.raleway_extra_light{
+  font-family: Raleway_Extra_Light_Italic;
+}
+@font-face {
+  font-family: Raleway_Italic_VariableFont;
+  src: url(fonts\Raleway-Italic-VariableFont_wght.ttf);
+}
+.raleway_italic_variablefont{
+  font-family: Raleway_Italic_VariableFont;
+}
+@font-face {
+  font-family: Raleway_Italic;
+  src: url(fonts\Raleway-Italic.ttf);
+}
+.raleway_italic{
+  font-family: Raleway_Italic;
+}
+@font-face {
+  font-family: Raleway_Light;
+  src: url(fonts\Raleway-Light.ttf);
+}
+.raleway_light{
+  font-family: Raleway_Light;
+}
+@font-face {
+  font-family: Raleway_Light_Italic;
+  src: url(fonts\Raleway-LightItalic.ttf);
+}
+.raleway_light_italic{
+  font-family: Raleway_Light_Italic;
+}
+@font-face {
+  font-family: Raleway_Medium;
+  src: url(fonts\Raleway-Medium.ttf);
+}
+.raleway_medium{
+  font-family: Raleway_Medium;
+}
+@font-face {
+  font-family: Raleway_Medium_Italic;
+  src: url(fonts\Raleway-MediumItalic.ttf);
+}
+.raleway_medium_italic{
+  font-family: Raleway_Medium_Italic;
+}
+@font-face {
+  font-family: Raleway_Regular;
+  src: url(fonts\Raleway-Regular.ttf);
+}
+.raleway_regular{
+  font-family: Raleway_Regular;
+}
+@font-face {
+  font-family: Raleway_SemiBold;
+  src: url(fonts\Raleway-SemiBold.ttf);
+}
+.raleway_semibold{
+  font-family: Raleway_SemiBold;
+}
+@font-face {
+  font-family: Raleway_SemiBold_Italic;
+  src: url(fonts\Raleway-SemiBoldItalic.ttf);
+}
+.raleway_semibold_italic{
+  font-family: Raleway_SemiBold_Italic;
+}
+@font-face {
+  font-family: Raleway_Thin;
+  src: url(fonts\Raleway-Thin.ttf);
+}
+.raleway_thin{
+  font-family: Raleway_Thin;
+}
+@font-face {
+  font-family: Raleway_Thin_Italic;
+  src: url(fonts\Raleway-Thin_Italic.ttf);
+}
+.raleway_thin_italic{
+  font-family: Raleway_Thin_Italic;
+}
+@font-face {
+  font-family: Raleway_VariableFont;
+  src: url(fonts\Raleway-VariableFont_wght.ttf);
+}
+.raleway_varaiablefont{
+  font-family: Raleway_VariableFont;
+}
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto_Regular, serif;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  text-align: center;
+  color:#FFFFFF;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  z-index: 1;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  max-width: auto;
+  flex-wrap: wrap;
+  gap: 40px;  
+}
+
+.card--1 .card__bg,
+.card--1 .card__bg--hover {
+  background-color: #62dca7;
+}
+
+.card--2 .card__bg,
+.card--2 .card__bg--hover {
+  background-color: #f89292;
+}
+.bshad{
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.bshadm{
+  box-shadow: 10px -5px 5px rgba(0, 0, 0, 0.2);
+}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes beben {
+    0% { transform: translateX(3px); }
+    5% { transform:  translateX(-3px); }
+    10% { transform:  translateX(3px); }
+    15% { transform:  translateX(-3px); }
+    20% { transform:  translateX(3px); }
+    25% { transform:  translateX(-3px); }
+    30% { transform:  translateX(3px); }
+    35% { transform:  translateX(-3px); }
+    40% { transform:  translateX(3px); }
+    45% { transform:  translateX(-3px); }
+    50% { transform:  translateX(3px); }
+    55% { transform:  translateX(-3px); }
+    60% { transform:  translateX(3px); }
+    65% { transform:  translateX(-3px); }
+    70% { transform:  translateX(3px); }
+    75% { transform:  translateX(-3px); }
+    80% { transform:  translateX(3px); }
+    85% { transform:  translateX(-3px); }
+    90% { transform:  translateX(3px); }
+    95% { transform:  translateX(-3px); }
+    100% { transform:  translateX(0px); }
+  }
+.fadein{
+  animation: fadeIn 0.8s;
+}
+.fadeinL{
+  animation: fadeIn 2s;
+}
+.bebe{
+  animation: beben 0.8s;
+}
+.card__bg {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 1;
+  height: 170px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__bg--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 300px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #0f2027;
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 33.3%;
+  position: relative;
+  color:#b7bec1;
+  border-radius: 12px;
+  overflow: hidden;
+  /*box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.10, 1.10);
+  color:#0f2027;
+}
+
+.card__info {
+  z-index: 2;
+  background-color: #0f2027;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  z-index: 10;
+  position: relative;
+}
+
+.card__category {
+  font-family: 'Roboto_Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto_Bold', serif;
+}
+
+.card__status {
+  font-size: 12px;
+  font-family: 'Raleway_SemiBold', sans-serif;
+  font-weight: 500;
+}
+
+.card__statusresult {
+  font-weight: 600;
+  text-decoration: none;
+  
+}
+
+.card:hover .card__bg--hover {
+  height: 100%;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
