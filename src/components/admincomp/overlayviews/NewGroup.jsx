@@ -30,13 +30,13 @@ const NewGroup = ()=>{
         document.getElementById(I).style.display="none";
     }
     return(<>
-    <div className="w-full   px-8 mt-10 text-white ">
+    <div className="w-full   md:px-8 px-4 mt-10 text-white ">
             <button onClick={()=>setFormtab(!Formtab)} className='float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-10 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] '><MdGroupAdd className="inline mr-4" />Neue Gruppe</button>
             </div>
             {
                 Formtab?
             
-            <div className="w-full   px-40 mb-4 grid grid-cols-2 gap-6 items-center justify-items-start">
+            <div className="w-full   md:px-40 px-4 mb-4 md:mt-0 mt-4 grid grid-cols-2 gap-6 items-center justify-items-start">
                 <div className="w-full">
                 <label for="gn" className="text-white">Gruppenname
                 <input  type='text' id='gn' name="groupname" placeholder='Gruppenname' className='mt-2 w-full p-2 border border-[rgba(255,255,255,0.12)] text-sm rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]' />
@@ -80,12 +80,12 @@ const NewGroup = ()=>{
                 </select>
                 </label>
                 </div>
-                <div className="w-full md:col-span-2 col-span-1">
+                <div className="w-full col-span-2 ">
                 <div className="w-full text-white">Benutzer (13)</div>
-                <div className="mt-2 border p-2 border-[rgba(255,255,255,0.12)] text-sm grid md:grid-cols-5 grid-cols-1 text-gray-400 rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]">
+                <div className="mt-2 border p-2 border-[rgba(255,255,255,0.12)] text-sm grid md:grid-cols-5 grid-cols-2 text-gray-400 rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]">
                     {
                         ustestarr.map((item,index)=>(
-                            <div id={item+index} key={item+index} className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-10 pr-6 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)]  ml-4 mt-2'>{item} <a onClick={()=>document.getElementById(item+index).style.display="none"} className="ml-4 float-right font-semibold inline text-red-600" >X</a></div>
+                            <div id={item+index} key={item+index} className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 md:text-sm text-xs hover:opacity-100 md:px-10 px-4  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)]  md:ml-4 ml-2 mt-2'>{item} <a onClick={()=>document.getElementById(item+index).style.display="none"} className="ml-4 float-right font-semibold inline text-red-600" >X</a></div>
                         ))
                     }
                 </div>
@@ -99,7 +99,7 @@ const NewGroup = ()=>{
             :
             <></>
             }
-            <div className="w-full   px-8 mt-6 text-white ">
+            <div className="w-full   md:px-8 px-4 mt-6 text-white ">
                 <div className="w-full border border-[rgba(255,255,255,0.1)] bg-[rgba(0,0,0,0.2)] mb-4">
                 <div className="w-full grid grid-cols-10 items-start justify-items-start py-2 divide-x divide-[rgba(255,255,255,0.1)] border-b border-[rgba(255,255,255,0.1)]">
                     <div className="w-full md:col-span-2 col-span-5 pl-2 ">Gruppenname</div>
@@ -114,11 +114,11 @@ const NewGroup = ()=>{
                 <div className="w-full grid grid-cols-10 items-start justify-items-start  py-3 hover:bg-[rgba(255,255,255,0.07)]">
                    <div className="w-full min-h-full  pt-2 md:col-span-2 col-span-5 pl-2">{item.Gname}</div>
                     <div className="w-full min-h-full col-span-3 pl-2 md:block hidden pt-2">{item.Rechte}</div>
-                    <div className="w-full min-h-full  pt-2  md:col-span-1 col-span-2 pl-2">{item.Aktiv?<><a className="float-left text-lime-500 mr-4">Aktiv</a> <span className="w-3 h-3 rounded-full float-left bg-lime-500 mr-8 mt-1 "></span></>:<><a className="float-left text-red-500 mr-4">Inaktiv</a> <span className="w-3 h-3 rounded-full float-left bg-red-500 mr-8 mt-1 "></span></>}</div>
+                    <div className="w-full min-h-full  pt-2  md:col-span-1 col-span-2 pl-2">{item.Aktiv?<><a className="float-left text-lime-500 mr-4 md:block hidden">Aktiv</a> <span className="w-3 h-3 rounded-full float-left bg-lime-500 mr-8 mt-1 "></span></>:<><a className="float-left text-red-500 mr-4  md:block hidden">Inaktiv</a> <span className="w-3 h-3 rounded-full float-left bg-red-500 mr-8 mt-1 "></span></>}</div>
                     <div className="w-full min-h-full  pt-2 md:col-span-1 col-span-3 pl-2">{item.Anzahl}</div>
                     <div className="w-full min-h-full   md:col-span-3 col-span-10 pl-2 ">
-                        <button onClick={()=>{if(confirm('Möchten Sie wirklich die Gruppe löschen?')){deleteGroup({I:index});}}} className="float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 bg-[#0f2027] flex flex-col items-center justify-center  w-10 h-10 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] mr-10"><MdDelete className="inline " /></button>
-                        <button className=" float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 bg-[#0f2027] flex flex-col items-center justify-center  w-10 h-10 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] mr-10"><FaEdit className="inline " /></button>
+                        <button onClick={()=>{if(confirm('Möchten Sie wirklich die Gruppe löschen?')){deleteGroup({I:index});}}} className="md:float-right float-left transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 bg-[#0f2027] flex flex-col items-center justify-center  w-10 h-10 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] md:mr-10 ml-4"><MdDelete className="inline " /></button>
+                        <button className="md:float-right float-left float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 bg-[#0f2027] flex flex-col items-center justify-center  w-10 h-10 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] md:mr-10 ml-4"><FaEdit className="inline " /></button>
                     </div>
                 </div>
                 </div>

@@ -86,7 +86,7 @@ const App=()=> {
             </>
             :
             <>
-            <div className='w-full flex flex-col items-center justify-center text-white md:mt-40 mt-20 md:px-0 px-10'>
+            <div className='w-full flex flex-col items-center justify-center text-white md:mt-40 mt-40 md:px-0 px-10'>
             <div className='md:w-2/5 w-full bg-[#0f202788] rounded-xl border border-[rgba(255,255,255,0.1)] p-4  shadow-2xl shadow-inner-2xl shadow-[rgba(0,0,0,0.3)]'>
             <div className='w-full  flex flex-col items-start justify-start'>
             <div className='w-full pl-8 Roboto_Bold md:text-2xl text-xl md:my-4 my-2 md:mb-8 mb-4'>
