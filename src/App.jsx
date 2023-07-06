@@ -135,7 +135,7 @@ const App=()=> {
             </div>
             </>
         }   
-        <div className='fixed z-[2] text-white bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]  w-full bottom-0 left-0 bshadm  border-t border-[rgba(255,255,255,0.1)] flex flex-col items-center justify-center text-xs py-2'>JKK Task Overview - Made with ❤ by Stephan & Fernando</div>  
+        <div className='fixed z-[0] text-white bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]  w-full bottom-0 left-0 bshadm  border-t border-[rgba(255,255,255,0.1)] flex flex-col items-center justify-center text-xs py-2'>JKK Task Overview - Made with ❤ by Stephan & Fernando</div>  
     </div>
     
   )

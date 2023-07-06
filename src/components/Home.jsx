@@ -8,6 +8,11 @@ import {RiAdminFill} from 'react-icons/ri';
 import {IoMdLogOut} from 'react-icons/io';
 import {IoHome} from 'react-icons/io5';
 import DesktopNav from './DesktopNav';
+import PolarChart from './homecomp/PolarChart';
+import AreaChart from './homecomp/AreaChart';
+import OneSpan from './homecomp/OneSpan';
+import TwoSpan from './homecomp/TwoSpan';
+import FullSpan from './homecomp/FullSpan';
 const Home=({SFront,LogStat,LViewer})=> {
    
 
@@ -25,7 +30,12 @@ const Home=({SFront,LogStat,LViewer})=> {
             </div>
             <div className="w-full  md:col-span-8 col-span-6 flex flex-col items-center justify-top">
                 <div className="w-11/12 grid md:grid-cols-6 grid-cols-2 gap-2  items-center justify-items-center mt-6">
-                    <div className='w-full md:col-span-6 col-span-2 bg-slate-200'>df</div>
+                    <div className='w-full md:col-span-6 col-span-2 grid md:grid-cols-3 grid-cols-1 gap-4 items-start justify-items-start'>
+                        <OneSpan Title={'Benutzerliste'} IsChart={false} ChartTyp={''} DataObj={{}}/>
+                        <TwoSpan Title={'Benutzer'} IsChart={true} ChartTyp={'AreaChart'} DataObj={{}}/>
+                        <FullSpan Title={'Abteilungsliste'} IsChart={false} ChartTyp={''} DataObj={{}}/>
+                        <OneSpan Title={'Benutzergruppen'} IsChart={true} ChartTyp={'PolarChart'} DataObj={{}}/>                        
+                    </div>
                 </div>
             </div>
         </div>     
