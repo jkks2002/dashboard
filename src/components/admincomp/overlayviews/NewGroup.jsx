@@ -4,6 +4,7 @@ import { MdDelete, MdGroupAdd } from "react-icons/md";
 const NewGroup = ()=>{
     const[IsSearched,setIsSearched]=useState(false)
     const[Formtab,setFormtab]=useState(false)
+    const[Rtab,setRtab]=useState(false)
     const[ustestarr,setustestarr]=useState([
         'Benutzer 1',
         'Benutzer 1',
@@ -30,20 +31,21 @@ const NewGroup = ()=>{
         document.getElementById(I).style.display="none";
     }
     return(<>
-    <div className="w-full   md:px-8 px-4 mt-10 text-white ">
-            <button onClick={()=>setFormtab(!Formtab)} className='float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-10 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] '><MdGroupAdd className="inline mr-4" />Neue Gruppe</button>
+    <div className="w-full   md:px-40 px-4  mt-10 text-white ">
+            <button onClick={()=>setFormtab(!Formtab)} className='float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-10 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] '><MdGroupAdd className="inline mr-4" />Neue Abteilung</button>
             </div>
             {
                 Formtab?
             
             <div className="w-full   md:px-40 px-4 mb-4 md:mt-0 mt-4 grid grid-cols-2 gap-6 items-center justify-items-start">
                 <div className="w-full">
-                <label for="gn" className="text-white">Gruppenname
+                <label for="gn" className="text-white">Name der Abteilung
                 <input  type='text' id='gn' name="groupname" placeholder='Gruppenname' className='mt-2 w-full p-2 border border-[rgba(255,255,255,0.12)] text-sm rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]' />
                 </label>
                 </div>
-                <div className="w-full">
-                <label for="gr" className="text-white">Gruppen-Richtlinien
+                <div className="w-full grid grid-cols-12 items-center">
+                    <div className="w-full col-span-11 pr-2">
+                <label for="gr" className="text-white">Abteilungs-Richtlinien
                 <select id="gr" className="mt-2  w-full p-2 border border-[rgba(255,255,255,0.12)] text-sm text-gray-400 rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]">
                 <option value={'Minimal'} className="bg-[#1c3a48] ">Richtlinie auswählen</option>
                 <option value={'Minimal'} className="bg-[#1c3a48] text-white">Standard</option>
@@ -53,6 +55,120 @@ const NewGroup = ()=>{
                 </select>
                 </label>
                 </div>
+                <div className="w-full items-center justify-center">
+                <button onClick={()=>setRtab(!Rtab)} className=' text-white inline transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-4 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-8 hover:bg-[#214251] '>+</button>
+                </div>
+                </div>
+                {
+                    Rtab?
+                    <>
+                    <div className="w-full col-span-2">
+                <div className="w-full text-white">Neue Richtlinien festlegen</div>
+                <div className="mt-2 border p-2 grid grid-cols-5  gap-2 border-[rgba(255,255,255,0.12)] text-sm text-gray-400 rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]">
+                <div className="w-full col-span-5 inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2">
+                <label for="gn" className="text-white">Name der Abteilung-Richtlinie
+                <input  type='text' id='gn' name="groupname" placeholder='Gruppenname' className='mt-2 w-full p-2 border border-[rgba(255,255,255,0.12)] text-sm rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]' />
+                </label>
+                </div>
+                    <div className='inline-block w-full col-span-4  inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2'>
+                        <div className="text-gray-100 uppercase underline mb-1">
+                            Analayse
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea beatae mollitia? Blanditiis voluptas, quam ut commodi sit soluta corporis magni quae dolores possimus corrupti, error itaque rem illum ratione.
+                        </div>
+                    </div>
+                    <div className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2 flex items-center bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251]  mt-2'>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+
+                    <div className='inline-block w-full col-span-4 inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2'>
+                        <div className="text-gray-100 uppercase underline mb-1">
+                            Task Scheduler
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea beatae mollitia? Blanditiis voluptas, quam ut commodi sit soluta corporis magni quae dolores possimus corrupti, error itaque rem illum ratione.
+                        </div>
+                    </div>
+                    <div className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2 flex items-center bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251]  mt-2'>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                    <div className='inline-block w-full col-span-4 inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2'>
+                        <div className="text-gray-100 uppercase underline mb-1">
+                            Task Scheduler
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea beatae mollitia? Blanditiis voluptas, quam ut commodi sit soluta corporis magni quae dolores possimus corrupti, error itaque rem illum ratione.
+                        </div>
+                    </div>
+                    <div className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2 flex items-center bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251]  mt-2'>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                    <div className='inline-block w-full col-span-4 inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2'>
+                        <div className="text-gray-100 uppercase underline mb-1">
+                            Task Scheduler
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea beatae mollitia? Blanditiis voluptas, quam ut commodi sit soluta corporis magni quae dolores possimus corrupti, error itaque rem illum ratione.
+                        </div>
+                    </div>
+                    <div className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2 flex items-center bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251]  mt-2'>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                    <div className='inline-block w-full col-span-4 inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2'>
+                        <div className="text-gray-100 uppercase underline mb-1">
+                            Task Scheduler
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea beatae mollitia? Blanditiis voluptas, quam ut commodi sit soluta corporis magni quae dolores possimus corrupti, error itaque rem illum ratione.
+                        </div>
+                    </div>
+                    <div className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2 flex items-center bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251]  mt-2'>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+
+                    <div className='inline-block w-full col-span-4 inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2  bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] mt-2'>
+                        <div className="text-gray-100 uppercase underline mb-1">
+                            REST-API
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea beatae mollitia? Blanditiis voluptas, quam ut commodi sit soluta corporis magni quae dolores possimus corrupti, error itaque rem illum ratione.
+                        </div>
+                    </div>
+                    <div className='inline-block inset transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 md:px-10 px-2 flex items-center bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251]  mt-2'>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div className="w-full   mt-10 text-white ">
+            <button onClick={()=>setRtab(!Rtab)} className='float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-10 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] ml-4'>Abbrechen</button>
+            <button onClick={()=>setRtab(!Rtab)} className='float-right transition-opacity duration-1000 ease-out opacity-80 hover:opacity-100 px-10 bg-[#0f2027] py-2 rounded border border-[rgba(255,255,255,0.1)] hover:bg-[#214251] '>Speichern</button>
+            </div>
+                </div>
+                    </>
+                    :
+                    <></>
+                }
+                
+
                 <div className="w-full">
                 <label className="text-white relative block">Benutzer hinzufügen
                 <span class="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -81,7 +197,7 @@ const NewGroup = ()=>{
                 </label>
                 </div>
                 <div className="w-full col-span-2 ">
-                <div className="w-full text-white">Benutzer (13)</div>
+                <div className="w-full text-white">Benutzer ({ustestarr.length})</div>
                 <div className="mt-2 border p-2 border-[rgba(255,255,255,0.12)] text-sm grid md:grid-cols-5 grid-cols-2 text-gray-400 rounded shadow-inner-2 bg-[rgba(255,255,255,0.1)]">
                     {
                         ustestarr.map((item,index)=>(
@@ -99,7 +215,7 @@ const NewGroup = ()=>{
             :
             <></>
             }
-            <div className="w-full   md:px-8 px-4 mt-6 text-white ">
+            <div className="w-full   md:px-40 px-4  mt-6 mb-20 text-white ">
                 <div className="w-full border border-[rgba(255,255,255,0.1)] bg-[rgba(0,0,0,0.2)] mb-4">
                 <div className="w-full grid grid-cols-10 items-start justify-items-start py-2 divide-x divide-[rgba(255,255,255,0.1)] border-b border-[rgba(255,255,255,0.1)]">
                     <div className="w-full md:col-span-2 col-span-5 pl-2 ">Gruppenname</div>

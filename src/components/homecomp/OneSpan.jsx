@@ -28,7 +28,7 @@ const OneSpan = ({Title, IsChart, ChartTyp, DataObj}) =>{
             ] ;   
             return (<>
             <div className="w-full h-full flex flex-col items-start justify-start divide-y divide-gray-500">
-            <div className="w-full grid grid-cols-10 text-gray-400  py-1 ">
+            <div className="w-full grid grid-cols-10 dark:text-gray-400 text-gray-900  py-1 ">
                             <div className="w-full col-span-4">Name</div>
                             <div className="w-full col-span-6">Rechte</div>
                         </div>
@@ -37,7 +37,7 @@ const OneSpan = ({Title, IsChart, ChartTyp, DataObj}) =>{
                         <div key={item+index} className="hover:bg-[rgba(0,0,0,0.14)] w-full grid grid-cols-10 py-1">
                             <div className="w-full col-span-4">{item.Uname}</div>
                             <div className="w-full col-span-4">{item.Right}</div>
-                            <div className="w-full col-span-2 flex flex-col items-center justify-center">{item.Right=="Low"?<div className="w-4 h-4 bg-red-500"></div>:<>{item.Right=="Medium"?<div className="w-4 h-4 bg-yellow-500"></div>:<div className="w-4 h-4 bg-lime-500"></div>}</>}</div>
+                            <div className="w-full col-span-2 flex flex-col items-center justify-center">{item.Right=="Low"?<div className="w-4 h-4 dark:bg-red-500 bg-red-600 rounded-full"></div>:<>{item.Right=="Medium"?<div className="w-4 h-4 dark:bg-yellow-500 bg-yellow-400 rounded-full"></div>:<div className="w-4 h-4 dark:bg-lime-500 bg-lime-400 rounded-full"></div>}</>}</div>
                         </div>
                     ))
                 }
@@ -47,9 +47,9 @@ const OneSpan = ({Title, IsChart, ChartTyp, DataObj}) =>{
     }
 
     return(
-        <div className='hover:bg-[#1c3a48] w-full p-4 cursor-pointer  bg-[#0f202788] rounded-xl border border-[rgba(255,255,255,0.1)] shadow-2xl shadow-[rgba(0,0,0,0.3)] flex flex-col items-start justify-top  '>
-                            <div className='w-full  flex flex-col items-center justify-center border-b border-[rgba(255,255,255,0.08)] pb-4 '>{Title}</div>
-                            <div className='w-full  flex flex-col items-start justify-start md:h-[350px] h-auto pt-4'>
+        <div className='inset transition-opacity duration-1000 ease-out opacity-80  hover:opacity-100 w-full p-4 cursor-pointer  dark:bg-[#0f2027] bg-[#8e9eab] rounded-xl border dark:border-[rgba(255,255,255,0.1)] border-[rgba(0,0,0,0.1)] shadow-2xl shadow-[rgba(0,0,0,0.3)] flex flex-col items-start justify-top  '>
+                            <div className='w-full  flex flex-col items-center justify-center dark:text-white text-gray-700  border-b dark:border-[rgba(255,255,255,0.08)] border-[rgba(0,0,0,0.18)] pb-4 '>{Title}</div>
+                            <div className='w-full  flex flex-col items-start justify-start dark:text-white text-gray-700  md:h-[350px] h-auto pt-4'>
                                 {
                                     IsChart?
                                     <><Charter Title={Title} ChartTyp={ChartTyp}  /></>

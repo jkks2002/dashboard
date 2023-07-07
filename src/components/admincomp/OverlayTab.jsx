@@ -7,13 +7,13 @@ const OverlayTab = ({Closer,View,Tname})=>{
     console.log(View)
     const OverlayHandler = ({View}) =>{
         switch(View){
-             case "Gruppen anlegen":
+             case "Abteilung anlegen":
                 return(<NewGroup />);
-             case "Gruppen Richtlinien":
+             case "Richtlinien Verwalten":
                 return(<GroupRights />);
         }
     }
-    
+   
     return(
         <>
         <div className="fixed z-[1] mt-[-160px] w-[100%] h-[100%] bg-[rgba(0,0,0,0.3)]"></div>

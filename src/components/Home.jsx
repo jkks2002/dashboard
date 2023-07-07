@@ -13,17 +13,17 @@ import AreaChart from './homecomp/AreaChart';
 import OneSpan from './homecomp/OneSpan';
 import TwoSpan from './homecomp/TwoSpan';
 import FullSpan from './homecomp/FullSpan';
+import.meta.env.DEV
 const Home=({SFront,LogStat,LViewer})=> {
-   
-
+   //ENV VARIABLE//let b= import.meta.env.VITE_REACT_APP_NOO;  
   return (
     <>
-    <div className='w-full grid md:grid-cols-10 grid-cols-6 h-full fadeinL mt-40 mb-40 text-white'>
+    <div className='w-full grid md:grid-cols-10 grid-cols-6 h-full fadeinL mt-20 pt-20 pb-40 text-white'>
             <div className="w-full md:col-span-2 md:block hidden pb-4"></div>
-            <div className="w-full md:col-span-8 col-span-6 text-3xl border-b border-[rgba(255,255,255,0.08)] pb-4 md:pl-0 pl-6">
-                <IoHome className="inline mr-2" /> Home
+            <div className="w-full md:col-span-8 col-span-6 dark:text-white text-gray-700 text-3xl border-b dark:border-[rgba(255,255,255,0.08)] border-[rgba(0,0,0,0.18)] pb-4 md:pl-0 pl-6">
+                <IoHome className="inline mr-2" /> Home  
             </div>
-            <div className="md:col-span-2 md:block hidden w-full ">
+            <div className="md:col-span-2 not-sr-only md:block hidden w-full ">
                 <div className='w-full flex flex-col items-center justify-top '>
                 <DesktopNav   SFront={SFront} LogStat={LogStat} LViewer={LViewer} />
                 </div>
@@ -40,7 +40,7 @@ const Home=({SFront,LogStat,LViewer})=> {
             </div>
         </div>     
     
-    <div className='hidden w-full h-full fadeinL mt-40 mb-40'>
+    <div className='hidden sr-only w-full h-full fadeinL mt-40 mb-40'>
       <div className="flex">
         <section className="cards">
             <article className="card card--1">

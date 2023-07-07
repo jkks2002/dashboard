@@ -5,6 +5,7 @@
 @font-face {
   font-family: Roboto_Black;
   src: url(fonts\Roboto\Roboto-Black.ttf);
+  font-display: swap;
 }
 .roboto_black{
   font-family: Roboto_Black;
@@ -12,6 +13,7 @@
 @font-face {
   font-family: Roboto_Black_Italic;
   src: url(fonts\Roboto\Roboto-BlackItalic.ttf);
+  font-display: swap;
 }
 .roboto_black_italic{
   font-family: Roboto_Black_Italic;
@@ -19,6 +21,7 @@
 @font-face {
   font-family: Roboto_Bold;
   src: url(fonts\Roboto\Roboto-Bold.ttf);
+  font-display: swap;
 }
 .roboto_bold{
   font-family: Roboto_Bold;
@@ -26,6 +29,7 @@
 @font-face {
   font-family: Roboto_Bold_Italic;
   src: url(fonts\Roboto\Roboto-BoldItalic.ttf);
+  font-display: swap;
 }
 .roboto_bold_italic{
   font-family: Roboto_Bold_Italic;
@@ -33,6 +37,7 @@
 @font-face {
   font-family: Roboto_Italic;
   src: url(fonts\Roboto\Roboto-Italic.ttf);
+  font-display: swap;
 }
 .roboto_italic{
   font-family: Roboto_Italic;
@@ -40,6 +45,7 @@
 @font-face {
   font-family: Roboto_Light;
   src: url(fonts\Roboto\Roboto-Light.ttf);
+  font-display: swap;
 }
 .roboto_light{
   font-family: Roboto_Light;
@@ -47,6 +53,7 @@
 @font-face {
   font-family: Roboto_Light_Italic;
   src: url(fonts\Roboto\Roboto-LightItalic.ttf);
+  font-display: swap;
 }
 .roboto_light_italic{
   font-family: Roboto_Light_Italic;
@@ -54,6 +61,7 @@
 @font-face {
   font-family: Roboto_Medium;
   src: url(fonts\Roboto\Roboto-Medium.ttf);
+  font-display: swap;
 }
 .roboto_medium{
   font-family: Roboto_Medium;
@@ -61,6 +69,7 @@
 @font-face {
   font-family: Roboto_Medium_Italic;
   src: url(fonts\Roboto\Roboto-MediumItalic.ttf);
+  font-display: swap;
 }
 .roboto_medium_italic{
   font-family: Roboto_Medium_Italic;
@@ -68,6 +77,7 @@
 @font-face {
   font-family: Roboto_Regular;
   src: url(fonts\Roboto\Roboto-Regular.ttf);
+  font-display: swap;
 }
 .roboto_regular{
   font-family: Roboto_Regular;
@@ -75,6 +85,7 @@
 @font-face {
   font-family: Roboto_Thin;
   src: url(fonts\Roboto\Roboto-Thin.ttf);
+  font-display: swap;
 }
 .roboto_thin{
   font-family: Roboto_Thin;
@@ -82,6 +93,7 @@
 @font-face {
   font-family: Roboto_Thin_Italic;
   src: url(fonts\Roboto\Roboto-ThinItalic.ttf);
+  font-display: swap;
 }
 .roboto_thin_italic{
   font-family: Roboto_Thin_Italic;
@@ -89,6 +101,7 @@
 @font-face {
   font-family: Raleway_Black;
   src: url(fonts\Raleway-Black.ttf);
+  font-display: swap;
 }
 .raleway_black{
   font-family: Raleway_Black;
@@ -96,6 +109,7 @@
 @font-face {
   font-family: Raleway_Black_Italic;
   src: url(fonts\Raleway-BlackItalic.ttf);
+  font-display: swap;
 }
 .raleway_black_italic{
   font-family: Raleway_Black_Italic;
@@ -103,6 +117,7 @@
 @font-face {
   font-family: Raleway_Extra_Bold;
   src: url(fonts\Raleway-ExtraBold.ttf);
+  font-display: swap;
 }
 .raleway_extra_bold{
   font-family: Raleway_Extra_Bold;
@@ -110,6 +125,7 @@
 @font-face {
   font-family: Raleway_Extra_Bold_Italic;
   src: url(fonts\Raleway-ExtraBoldItalic.ttf);
+  font-display: swap;
 }
 .raleway_extra_bold_italic{
   font-family: Raleway_Extra_Bold_Italic;
@@ -117,6 +133,7 @@
 @font-face {
   font-family: Raleway_Extra_Light;
   src: url(fonts\Raleway-ExtraLight.ttf);
+  font-display: swap;
 }
 .raleway_extra_light{
   font-family: Raleway_Extra_Light;
@@ -124,6 +141,7 @@
 @font-face {
   font-family: Raleway_Extra_Light_Italic;
   src: url(fonts\Raleway-ExtraLightItalic.ttf);
+  font-display: swap;
 }
 .raleway_extra_light{
   font-family: Raleway_Extra_Light_Italic;
@@ -131,6 +149,7 @@
 @font-face {
   font-family: Raleway_Italic_VariableFont;
   src: url(fonts\Raleway-Italic-VariableFont_wght.ttf);
+  font-display: swap;
 }
 .raleway_italic_variablefont{
   font-family: Raleway_Italic_VariableFont;
@@ -138,6 +157,7 @@
 @font-face {
   font-family: Raleway_Italic;
   src: url(fonts\Raleway-Italic.ttf);
+  font-display: swap;
 }
 .raleway_italic{
   font-family: Raleway_Italic;
@@ -145,6 +165,7 @@
 @font-face {
   font-family: Raleway_Light;
   src: url(fonts\Raleway-Light.ttf);
+  font-display: swap;
 }
 .raleway_light{
   font-family: Raleway_Light;
@@ -152,6 +173,7 @@
 @font-face {
   font-family: Raleway_Light_Italic;
   src: url(fonts\Raleway-LightItalic.ttf);
+  font-display: swap;
 }
 .raleway_light_italic{
   font-family: Raleway_Light_Italic;
@@ -159,6 +181,7 @@
 @font-face {
   font-family: Raleway_Medium;
   src: url(fonts\Raleway-Medium.ttf);
+  font-display: swap;
 }
 .raleway_medium{
   font-family: Raleway_Medium;
@@ -166,6 +189,7 @@
 @font-face {
   font-family: Raleway_Medium_Italic;
   src: url(fonts\Raleway-MediumItalic.ttf);
+  font-display: swap;
 }
 .raleway_medium_italic{
   font-family: Raleway_Medium_Italic;
@@ -173,6 +197,7 @@
 @font-face {
   font-family: Raleway_Regular;
   src: url(fonts\Raleway-Regular.ttf);
+  font-display: swap;
 }
 .raleway_regular{
   font-family: Raleway_Regular;
@@ -180,6 +205,7 @@
 @font-face {
   font-family: Raleway_SemiBold;
   src: url(fonts\Raleway-SemiBold.ttf);
+  font-display: swap;
 }
 .raleway_semibold{
   font-family: Raleway_SemiBold;
@@ -187,6 +213,7 @@
 @font-face {
   font-family: Raleway_SemiBold_Italic;
   src: url(fonts\Raleway-SemiBoldItalic.ttf);
+  font-display: swap;
 }
 .raleway_semibold_italic{
   font-family: Raleway_SemiBold_Italic;
@@ -194,6 +221,7 @@
 @font-face {
   font-family: Raleway_Thin;
   src: url(fonts\Raleway-Thin.ttf);
+  font-display: swap;
 }
 .raleway_thin{
   font-family: Raleway_Thin;
@@ -201,6 +229,7 @@
 @font-face {
   font-family: Raleway_Thin_Italic;
   src: url(fonts\Raleway-Thin_Italic.ttf);
+  font-display: swap;
 }
 .raleway_thin_italic{
   font-family: Raleway_Thin_Italic;
@@ -208,6 +237,7 @@
 @font-face {
   font-family: Raleway_VariableFont;
   src: url(fonts\Raleway-VariableFont_wght.ttf);
+  font-display: swap;
 }
 .raleway_varaiablefont{
   font-family: Raleway_VariableFont;
@@ -217,9 +247,17 @@ body{
   margin: 0;
   padding: 0;
   font-family: Roboto_Regular, serif;
+}
+.darknbg{
   background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nbg{
+  background: #4AC29A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 h1 {
   text-align: center;

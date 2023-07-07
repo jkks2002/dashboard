@@ -47,8 +47,8 @@ const TwoSpan = ({Title, IsChart, ChartTyp, DataObj}) =>{
     }
 
     return(
-        <div className='md:col-span-3 col-span-1 hover:bg-[#1c3a48] w-full p-4 cursor-pointer  bg-[#0f202788] rounded-xl border border-[rgba(255,255,255,0.1)] shadow-2xl shadow-[rgba(0,0,0,0.3)] flex flex-col items-start justify-top  '>
-                            <div className='w-full  flex flex-col items-center justify-center border-b border-[rgba(255,255,255,0.08)] pb-4 '>{Title}</div>
+        <div className='md:col-span-3 col-span-1 inset transition-opacity duration-1000 ease-out opacity-80  hover:opacity-100 w-full p-4 cursor-pointer  dark:bg-[#0f2027] bg-[#8e9eab] rounded-xl border dark:border-[rgba(255,255,255,0.1)] border-[rgba(0,0,0,0.1)] shadow-2xl shadow-[rgba(0,0,0,0.3)] flex flex-col items-start justify-top  '>
+                            <div className='w-full  flex flex-col items-center justify-center border-b dark:text-white text-gray-700  dark:border-[rgba(255,255,255,0.08)] border-[rgba(0,0,0,0.18)] pb-4 '>{Title}</div>
                             <div className='w-full  flex flex-col items-start justify-start md:h-[350px] h-auto pt-4'>
                                 {
                                     IsChart?

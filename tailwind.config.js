@@ -12,5 +12,7 @@ export default {
     },
   },
   plugins: [],
+  mode: "jit",
+  darkMode: 'class', // or 'media' or 'class',
 }
 
